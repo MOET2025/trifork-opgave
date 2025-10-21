@@ -1,6 +1,7 @@
 import { Component, inject } from '@angular/core';
 import { DogImage } from '../dog-image';
 
+/** IMPORTANT! THIS FILE IS OLD AND UNUSED. WILL BE DELETED BEFORE HAND-IN. IS HERE FOR REFERENCE PURPOSES */
 @Component({
   selector: 'app-home',
   imports: [],
