@@ -1,0 +1,27 @@
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: var(--primary-color);
+    padding: var(--button-padding);
+    font-family: var(--primary-font-family);
+    font-size: var(--primary-font-size);
+    font-weight: var(--primary-font-weight);
+}
+
+.navbarLink {
+    text-decoration: none;
+    color: var(--primary-text-color);
+    width: auto;
+    padding: var(--button-padding);
+    border-radius: var(--button-border-radius);
+}
+
+.navbarLink:hover {
+    background-color: var(--secondary-color);
+}
+
+.navbarLink:active {
+    background-color: var(--secondary-color);
+}

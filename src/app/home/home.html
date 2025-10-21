@@ -1,0 +1,45 @@
+<div class="container">
+  <h1>Velkommen til Adopter En Hund</h1>
+  <p>Tryk på knappen for at få en tilfældig hund. Alle er skønne på hver deres måde.</p>
+
+  <div>
+    <button (click)="getDogImageOnClick()">
+      Få Din Hund Her!
+    </button>
+  </div>
+
+  <div class="dogImageContainer">
+    <img class="dogImage" src="{{ dogImageUrl }}" alt="Hunde Billede" /> 
+  </div>
+
+  <div>
+    @if (imgIsFav(dogImageUrl)) {
+      <button disabled>
+        Adopteret
+      </button>
+    } @else {
+      <button (click)="setFavDogImageOnClick()">
+        Adopter
+      </button>
+    }
+  </div>
+
+    <h2>Adoptions Galleri</h2>
+    @if (favArray.length > 0) {
+        <div class="favDogGridContainer">
+          @for (favDogImg of favArray; track $index) {
+            <div class="favDogContent">
+              <img class="favDogImg" src="{{ favDogImg }}" alt="Favorit Hunde Billede {{ $index + 1 }}" />
+              <button (click)="removeFavDog(favDogImg)" class="removeFavDogImg">
+                Bortadopter
+              </button>
+            </div>
+          }
+        </div>
+    } @else {
+      <div class="noFavsMessage">
+        <h3>Du har ikke adopteret nogle hunde endnu.</h3>
+      </div>
+    }
+
+</div>

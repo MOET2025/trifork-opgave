@@ -1,0 +1,108 @@
+/* You can add global styles to this file, and also import other style files */
+:root {
+    /* colors */
+    --primary-color: #c9dff7;
+    --secondary-color: #aed0f3;
+
+    /* text colors */
+    --primary-text-color: #4da3fa;
+    --secondary-text-color: #eceef1;
+
+    /* fonts */
+    --primary-font-family: 'Arial', sans-serif;
+    --primary-font-size: 14px;
+    --primary-font-weight: 600;
+
+    /* margin */
+    --large-margin: 20px;
+
+    /* button specific css */
+    --button-font-size: 1em;
+    --button-padding: 10px 20px;
+    --button-border-radius: 23px;
+    --button-primary-color: #416de7;
+    --button-secondary-color: #4c76eb;
+    --button-deactive-color: #c0c4c7;
+    --button-primary-remove-color: #d62f2f;
+    --button-secondary-remove-color: #e43e3e;
+    --none: none;
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: whitesmoke;
+    scrollbar-width: thin;
+    scrollbar-color: var(--secondary-color) transparent;
+    font-family: var(--secondary-font-family);
+}
+
+h1 {
+    user-select: none;
+    color: var(--primary-text-color); 
+    font-size: 2em;
+    font-family: var(--primary-font-family);
+    text-align: center;
+
+    padding-top: 20px;
+    margin: 0;
+}
+
+h2 {
+    user-select: none;
+    color: var(--primary-text-color); 
+    font-size: 1.5em;
+    font-family: var(--primary-font-family);
+    text-align: center;
+    margin: 10px 0;
+}
+
+h3 {
+    user-select: none;
+    color: var(--primary-text-color); 
+    font-size: 1em;
+    font-style: italic;
+    font-family: var(--primary-font-family);
+    text-align: center;
+    margin: 10px 0;
+}
+
+p {
+    user-select: none;
+    color: var(--primary-text-color); 
+    font-family: var(--primary-font-family);
+    text-align: center;
+    margin: 10px 0;
+}
+
+a {
+    color: var(--primary-text-color);
+}
+
+button {
+    margin-top: var(--large-margin);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding: var(--button-padding);
+    border-radius: var(--button-border-radius);
+    border: var(--none);
+    background-color: var(--button-primary-color);
+    font-size: var(--button-font-size);
+    font-weight: var(--primary-font-weight);
+    color: var(--secondary-text-color);
+}
+
+button:hover {
+    background-color: var(--button-secondary-color);
+}
+
+.noHover {
+    background-color: var(--button-deactive-color);
+    pointer-events: none;
+}
+
+
