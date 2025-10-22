@@ -2,7 +2,7 @@
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.6.
 
-This is a code project made by Mathilde Ørsted Toft for Trifork. The project has a frontpage where users can get a random picture of a dog, and choose to adopt it. Adopted dogs are shown in the dogkennel. Users can also choose to give adopted dogs up for adoption again, removing them from the dogkennel. 
+This is a code project made for Trifork. The project has a frontpage where users can get a random picture of a dog, and choose to adopt it. Adopted dogs are shown in the dogkennel. Users can also choose to give adopted dogs up for adoption again, removing them from the dogkennel. 
 
 ## Running the project
 
