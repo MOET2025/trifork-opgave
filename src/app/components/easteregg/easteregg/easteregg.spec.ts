@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { Gallery } from './gallery';
+import { Easteregg } from './easteregg';
 
-describe('Gallery', () => {
-  let component: Gallery;
-  let fixture: ComponentFixture<Gallery>;
+describe('Easteregg', () => {
+  let component: Easteregg;
+  let fixture: ComponentFixture<Easteregg>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [Gallery]
+      imports: [Easteregg]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(Gallery);
+    fixture = TestBed.createComponent(Easteregg);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

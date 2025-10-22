@@ -1,0 +1,15 @@
+<h1>Hundekennel</h1>
+    @if (adoptedDogImages.length > 0) {
+        <div class="adoptedDogGridContainer">
+          @for (adoptedDogImg of adoptedDogImages; track $index) {
+            <div class="adoptedDogContent">
+              <img class="adoptedDogImg" src="{{ adoptedDogImg }}" alt="Adopteret Hunde Billede {{ $index + 1 }}" />
+              <app-button type="removeDogButton" description="Bortadopter" (userClicked)="removeAdoptedDogOnClick(adoptedDogImg)" />
+            </div>
+          }
+        </div>
+    } @else {
+      <div class="noAdoptedMessage">
+        <h3>Du har ikke adopteret nogle hunde endnu.</h3>
+      </div>
+    }
