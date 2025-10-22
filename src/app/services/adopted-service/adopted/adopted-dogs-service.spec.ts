@@ -1,13 +1,12 @@
 import { TestBed } from '@angular/core/testing';
+import { AdoptedDogsService } from './adopted-dogs-service';
 
-import { FavouriteDogsService } from './favourite-dogs-service';
-
-describe('FavouriteDogsService', () => {
-  let service: FavouriteDogsService;
+describe('AdoptedDogsService', () => {
+  let service: AdoptedDogsService;
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    service = TestBed.inject(FavouriteDogsService);
+    service = TestBed.inject(AdoptedDogsService);
   });
 
   it('should be created', () => {

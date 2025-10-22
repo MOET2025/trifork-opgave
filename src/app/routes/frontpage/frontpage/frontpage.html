@@ -1,0 +1,28 @@
+<div class="frontPageContainer">
+    <h1>Velkommen!</h1>
+    <h2>Her kan du adoptere en hund</h2>
+     <div class="frontPageParagraph">
+        <p>Tryk på knappen for at få en tilfældig<span (click)="easterEgg()"> hund.</span> Alle er skønne på hver deres måde.</p>
+     </div>
+     <!--TODO undersøg om der er locale/måder at centralisere tekst i angular-->
+    <div class="frontPageContent">
+        <div class="dogImageContainer">
+            <img class="dogImage" src="{{ currentDogImageUrl }}" alt="Billede af en tilfældig, sød hund">
+        </div>
+        <div class="buttonContainer">
+            <app-button type="" description="Næste hund"(userClicked)="getRandomDogImageOnClick()" />
+            <div>
+                @if (isDogAdopted(currentDogImageUrl)) {
+                    <app-button type="noHover" description="Adopteret" />
+                } @else {
+                    <app-button type="adoptionButton" description="Adopter" (userClicked)="addDogAsAdoptedOnClick()" />
+                }
+            </div>
+        </div>
+    </div>
+    <h2>Se dine adopterede hunde under <a routerLink="/hundekennel">hundekennel</a></h2>
+    <app-easteregg [show]="showEasterEgg" (closed)="showEasterEgg = false" />
+</div>
+
+
+

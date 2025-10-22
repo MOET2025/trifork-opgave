@@ -1,0 +1,26 @@
+
+.adoptionButton {
+    color: var(--secondary-text-color); 
+    background-color: var(--button-primary-color); 
+    cursor: pointer; 
+    box-shadow: 0 0 10px 0 var(--button-primary-color); 
+    transition: box-shadow 0.3s, transform 0.3s; 
+    margin-left: 5px;
+}
+
+.adoptionButton:hover {
+    box-shadow: 0 0 20px 0px var(--button-primary-color); 
+    transform: scale(1.05); 
+}
+
+.adoptionButton:active { 
+    transform: scale(0.95); 
+}
+
+.removeDogButton {
+    background-color: var(--button-primary-remove-color) !important;
+}
+
+.removeDogButton:hover {
+    background-color: var(--button-secondary-remove-color) !important;
+}
