@@ -1,6 +1,6 @@
 import { Routes } from '@angular/router';
-import { Frontpage } from './frontpage/frontpage';
-import { Gallery } from './gallery/gallery';
+import { Frontpage } from './routes/frontpage/frontpage/frontpage';
+import { Dogkennel } from './routes/dogkennel/dogkennel/dogkennel';
 
 export const routes: Routes = [
     {
@@ -9,8 +9,8 @@ export const routes: Routes = [
         title: 'Forside',
     },
     {
-        path: 'gallery',
-        component: Gallery,
-        title: 'Galleri',
+        path: 'hundekennel',
+        component: Dogkennel,
+        title: 'Hundekennel',
     }
 ];
